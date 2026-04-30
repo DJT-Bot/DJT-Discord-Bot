@@ -1,13 +1,13 @@
 const RPC = require("discord-rpc");
 const pm2 = require("pm2");
 
-const clientId = "DISCORD_BOT_ID_HERE";
+const clientId = "1481669136164851762";
 const BOT_NAME = "djt-bot";
 
 const rpc = new RPC.Client({ transport: "ipc" });
 
 rpc.on("ready", () => {
-    console.log("presence connected.");
+    console.log("PiClinton presence connected.");
 
     updatePresence();
 
@@ -46,11 +46,11 @@ function updatePresence() {
             const memoryMB = Math.round(bot.monit.memory / 1024 / 1024);
 
             rpc.setActivity({
-                details: "NAME_HERE",
-                state: `DJT Bot: ${status} | CPU ${cpu}% | RAM ${memoryMB}MB`,
+                details: "Monitoring The Trump Bot",
+                state: `Monitoring: ${status} | CPU ${cpu}% | RAM ${memoryMB}MB`,
                 startTimestamp: uptime,
-                largeImageKey: "bot",
-                largeImageText: "TEXT_HERE",
+                largeImageKey: "trumpgaming",
+                largeImageText: "Fuck Donald Trump",
                 instance: false
             });
 
