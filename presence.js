@@ -1,7 +1,7 @@
 const RPC = require("discord-rpc");
 const pm2 = require("pm2");
 
-const clientId = "1481669136164851762";
+const clientId = "BOT_ID_HERE";
 const BOT_NAME = "djt-bot";
 
 const rpc = new RPC.Client({ transport: "ipc" });
